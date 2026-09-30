@@ -1,0 +1,4 @@
+# Turn-usage toast bundle: one Host row whose browser half registers the toast.
+- insert:
+    - id: turn-usage-toast
+      name: '@local/dsh-turn-usage-toast'

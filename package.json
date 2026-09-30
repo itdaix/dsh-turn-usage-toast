@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-turn-usage-toast",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Frame-wide toast showing the model and token count of each completed Turn",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
